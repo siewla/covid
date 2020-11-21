@@ -1,6 +1,13 @@
+.outerContainer {
+  width: 90%;
+}
+
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
-  width: 85%;
-  margin-top: 2vh;
+  width: 80vw;
+  margin: 2vh auto;
 }
