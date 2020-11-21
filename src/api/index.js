@@ -26,6 +26,8 @@ export const fetchDailyData = async () => {
       'https://api.covidtracking.com/v1/us/daily.json',
     );
 
+    data.reverse();
+
     return data.map(({ positive, recovered, death, dateChecked: date }) => ({
       confirmed: positive,
       recovered,
